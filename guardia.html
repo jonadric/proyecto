@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<a-scene vr-mode-ui="enabled: true" fog="color: #241417; near: 0; far: 30;" raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+<a-scene vr-mode-ui="enabled: true" raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
 
 
 <a-assets>
@@ -27,14 +27,13 @@
 </a-assets>
 
 <!-- links a otras pantallas -->
-<a-link href="index.html" position="-3.5 1.5 -1.0" image="#inicio"></a-link>
-<a-link href="pasilloNorte.html" position="0 1.5 -1.0" image="#pasilloNorte"></a-link>
-<a-link href="patio3.html" position="3.5 1.5 -1.0" image="#patio3"></a-link>
+<a-link href="index.html" position="-2.0 1.5 0" image="#inicio"></a-link>
+<a-link href="pasilloNorte.html" position="0 1.5 -2.0" image="#pasilloNorte"></a-link>
+<a-link href="patio3.html" position="0 1.5 2.0" image="#patio3"></a-link>
 
 
 <a-sky src="images/backgrounds/guardia.JPG"></a-sky>
-
-<a-entity light="type: point; color: #f4f4f4; intensity: 0.4; distance: 0" position="0 2 0"></a-entity>
+<!-- <a-entity light="type: point; color: #f4f4f4; intensity: 0.4; distance: 0" position="0 2 0"></a-entity> -->
 <a-entity id="leftHand" link-controls="hand: left"></a-entity>
 <a-entity id="rightHand" link-controls="hand: right"></a-entity>
 </a-scene>
