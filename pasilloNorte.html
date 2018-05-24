@@ -24,7 +24,28 @@
 <img id="inicio" crossOrigin="anonymous" src="images/backgrounds/plaza.JPG">
 <img id="pasilloNorte" crossOrigin="anonymous" src="images/backgrounds/pasilloNorte.JPG">
 <img id="patio3" crossOrigin="anonymous" src="images/backgrounds/patio3.JPG">
+</a-assets><body>
+<a-scene vr-mode-ui="enabled: true" raycaster="far: 100; objects: [link];" cursor="rayOrigin: mouse" camera-position>
+
+<!-- imagenes -->
+<a-assets>
+<img id="patio1B" crossOrigin="anonymous" src="images/backgrounds/patio1B.JPG">
+<img id="teatro" crossOrigin="anonymous" src="images/backgrounds/teatro.JPG">
+<img id="guardia" crossOrigin="anonymous" src="images/backgrounds/guardia.JPG">
 </a-assets>
+
+<!-- links otros escenarios -->
+
+<a-link href="patio1B.html" position="-5.0 1.5 0" rotation="0 45 0" image="#patio1B"></a-link>
+<a-link href="teatro.html" position="-5.0 1.5 -3.0" rotation="0 45 0" image="#teatro"></a-link>
+<a-link href="guardia.html" position="0 1.5 8.0" rotation="0 45 0" image="#guardia"></a-link>
+
+<!-- objetos escena -->
+<a-sky src="images/backgrounds/pasilloNorte.JPG"></a-sky>
+<a-entity id="leftHand" link-controls="hand: left"></a-entity>
+<a-entity id="rightHand" link-controls="hand: right"></a-entity>
+</a-scene>
+</body>
 
 <!-- links a otras pantallas -->
 <a-link href="index.html" position="-2.0 1.5 0" image="#inicio"></a-link>
